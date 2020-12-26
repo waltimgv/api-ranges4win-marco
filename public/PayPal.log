@@ -1,0 +1,10 @@
+[27-05-2020 14:37:46] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[27-05-2020 14:37:47] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[27-05-2020 14:37:47] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/billing/plans
+[27-05-2020 14:37:48] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201
+[27-05-2020 14:37:53] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/payments/billing-plans/P-2U9751680T8809838L3HKK3A
+[27-05-2020 14:37:54] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[27-05-2020 14:37:54] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/billing-plans/P-2U9751680T8809838L3HKK3A. {"name":"BUSINESS_VALIDATION_ERROR","debug_id":"6d548a88d5448","message":"Invalid request. See details.","information_link":"https://developer.paypal.com/docs/api/payments.billing-plans#errors","details":[{"field":"validation_error","issue":"Incorrect Plan Id."}]}
+[27-05-2020 14:38:02] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/payments/billing-plans/P-2U9751680T8809838L3HKK3A
+[27-05-2020 14:38:03] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[27-05-2020 14:38:03] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/billing-plans/P-2U9751680T8809838L3HKK3A. {"name":"BUSINESS_VALIDATION_ERROR","debug_id":"18318da3eb3a5","message":"Invalid request. See details.","information_link":"https://developer.paypal.com/docs/api/payments.billing-plans#errors","details":[{"field":"validation_error","issue":"Incorrect Plan Id."}]}

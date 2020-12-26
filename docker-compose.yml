@@ -1,0 +1,29 @@
+version: '2'
+volumes:
+  cartas-mysql-data:
+    driver: local
+services:
+  app:
+    image: webdevops/php-apache-dev:7.1
+    container_name: cartas-app
+    volumes:
+      - .:/app
+    ports:
+      - "80:80"
+    environment:
+      - WEB_DOCUMENT_ROOT=/app
+    links:
+      - mysql
+
+  mysql:
+    image: mysql:5.6
+    container_name: cartas-mysql
+    volumes:
+      - cartas-mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=cartas_12345
+      - MYSQL_DATABASE=cartas
+      - MYSQL_USER=cartas
+      - MYSQL_PASSWORD=cartas_12345

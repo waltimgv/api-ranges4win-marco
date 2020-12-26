@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Enums;
+
+use BenSampo\Enum\Enum;
+
+/**
+ */
+final class PaypalWebhookEventType extends Enum
+{
+    const RENEWED = 'BILLING.SUBSCRIPTION.RENEWED';
+    const ACTIVATED = 'BILLING.SUBSCRIPTION.ACTIVATED';
+    const CANCELLED = 'BILLING.SUBSCRIPTION.CANCELLED';
+    const EXPIRED = 'BILLING.SUBSCRIPTION.EXPIRED';
+    const FAILED = 'BILLING.SUBSCRIPTION.PAYMENT.FAILED';
+    const SUSPENDED = 'BILLING.SUBSCRIPTION.SUSPENDED';
+}
